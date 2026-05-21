@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
 /* Mengatur tampilan body */
 body{
@@ -12,26 +12,27 @@ body{
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
-  }
+}
 
 /* Membuat container utama */
 .container{
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  }
+  margin-bottom: 10px;
+}
 
 /* Membuat tampilan header */
 header{
   background-color: #1e293b;
   color: white;
   padding: 20px 0;
-  }
+}
 
 header h1{
   text-align: center;
   margin-bottom: 15px;
-  }
+}
 
 /* Membuat navigasi menggunakan flexbox */
 nav ul{
@@ -39,55 +40,62 @@ nav ul{
   justify-content: center;
   gap: 20px;
   list-style: none;
-  }
+}
 
 nav a{
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
-  }
+}
 
 nav a:hover{
   color: #38bdf8;
-  }
+}
 
 /* Membuat layout main menggunakan flexbox */
 main{
   display: flex;
-  gap: 20px;
-  margin: 20px 0;
-  }
+  align-items: stretch;
+  gap: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
 /* Membuat area konten */
 #content{
   flex: 3;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
 /* Membuat tampilan article */
 article{
   background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-  }
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+  height:100%;
+}
 
 article h2{
   margin-bottom: 10px;
   color: #0f172a;
-  }
+}
 
 /* Membuat tampilan aside */
 aside{
   flex: 1;
   background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  height: fit-content;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
   text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
 /* Mengatur foto profil */
 aside img{
@@ -127,6 +135,8 @@ footer{
   main{
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* Mengatur header */
@@ -194,6 +204,10 @@ footer{
     gap: 20px;
   }
 
+  #content{
+    gap: 15px;
+  }
+  
   nav ul{
     flex-wrap: wrap;
     justify-content: center;
