@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Mengatur tampilan body */
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -120,6 +124,16 @@ aside img{
   object-fit: cover;
   display: block;
   margin: 0 auto 20px auto;
+}
+
+img{
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+img:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 /* Membuat tampilan footer */
